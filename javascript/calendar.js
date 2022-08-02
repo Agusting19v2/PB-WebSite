@@ -1,5 +1,5 @@
 window.onload = function () {
-  const calendar = document.getElementById("calendar");
+  const calendar = document.querySelector("div.calendar");
 
   const calendario = [
     ["1/8 Agustin", "2/8 Matifa", "3/8 Facu", "4/8 Emma", "5/8 Sofi"],
