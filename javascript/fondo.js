@@ -4,31 +4,26 @@ window.onload = function () {
   const tableDiv3 = document.querySelector("div.tableContainer3");
 
   const fondo = [
-    { nombre: "Agustin", deuda: 0, pago: 500, registrado: "9/7" },
-    { nombre: "Ary", deuda: 1000, pago: 0, registrado: "-" },
-    { nombre: "Emma", deuda: 1500, pago: 0, registrado: "-" },
-    { nombre: "Facu", deuda: 0, pago: 500, registrado: "12/7" },
-    { nombre: "Flor", deuda: 0, pago: 1000, registrado: "24/7" },
-    { nombre: "Lara", deuda: 0, pago: 500, registrado: "14/7" },
-    { nombre: "Luly", deuda: 0, pago: 500, registrado: "13/7" },
-    { nombre: "Colombo", deuda: 0, pago: 500, registrado: "1/7" },
-    { nombre: "Matifa", deuda: 0, pago: 500, registrado: "11/7" },
-    { nombre: "Sofi", deuda: 0, pago: 500, registrado: "26/7" },
+    { nombre: "Agustin", deuda: 600, pago: 0, registrado: "-" },
+    { nombre: "Ary", deuda: 1600, pago: 0, registrado: "-" },
+    { nombre: "Emma", deuda: 2100, pago: 0, registrado: "-" },
+    { nombre: "Facu", deuda: 600, pago: 0, registrado: "-" },
+    { nombre: "Flor", deuda: 600, pago: 0, registrado: "-" },
+    { nombre: "Lara", deuda: 600, pago: 0, registrado: "-" },
+    { nombre: "Luly", deuda: 600, pago: 0, registrado: "-" },
+    { nombre: "Colombo", deuda: 600, pago: 0, registrado: "-" },
+    { nombre: "Matifa", deuda: 600, pago: 0, registrado: "-" },
+    { nombre: "Sofi", deuda: 600, pago: 0, registrado: "-" },
   ];
 
   const fondoHeaders = ["Nombre", "Deuda", "Pagó", "Registrado"];
 
-  const gastos = [
-    { gasto: "Detergente y esponjas", monto: 930, dia: "1/7" },
-    { gasto: "Bolsas", monto: 260, dia: "7/7" },
-    { gasto: "Gas", monto: 2470, dia: "19/7" },
-  ];
+  const gastos = [{ gasto: "Bolsas", monto: 400, dia: "1/8" }];
 
   const gastosHeaders = ["Gasto", "Monto", "Dia"];
 
-  let deudaTotal = 0;
-  let fondoTotal = 350;
-  // const total = [{ deuda: "$2500", fondo: "$2260" }];
+  let deudaTotal = 2500;
+  let fondoTotal = 1190;
 
   const createTable = (data, headers, divOfTable) => {
     let table = document.createElement("table");
