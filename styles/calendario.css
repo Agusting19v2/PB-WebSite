@@ -18,11 +18,13 @@
 
 #body th {
   background-color: #ffffff;
+  word-wrap: break-word;
 }
 
 #body th,
 #body td {
-  padding: 20px 0px;
+  padding: 20px 5px;
+  word-wrap: break-word;
 }
 
 #body tr {
