@@ -53,7 +53,7 @@ window.onload = function () {
       tbody.appendChild(row);
     });
 
-    calendar.appendChild(table);
+    return calendar.appendChild(table);
   }
 
   fillCalendar();
