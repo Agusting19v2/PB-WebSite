@@ -1,4 +1,6 @@
 window.onload = function () {
+  const calendar = document.getElementById("calendar");
+
   const calendario = [
     ["1/8 Agustin", "2/8 Matifa", "3/8 Facu", "4/8 Emma", "5/8 Sofi"],
     ["8/8 Colombo", "9/8 Lara", "10/8 Luly", "11/8 Flor", "12/8 Ary"],
@@ -18,7 +20,7 @@ window.onload = function () {
     return formattedToday;
   };
 
-  function calendar() {
+  function fillCalendar() {
     const daysOfWeek = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
     const date = currentDate();
 
@@ -51,8 +53,8 @@ window.onload = function () {
       tbody.appendChild(row);
     });
 
-    document.getElementById("calendar").appendChild(table);
+    calendar.appendChild(table);
   }
 
-  calendar();
+  fillCalendar();
 };
